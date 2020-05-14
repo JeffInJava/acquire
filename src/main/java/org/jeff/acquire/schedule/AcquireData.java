@@ -32,7 +32,7 @@ public class AcquireData {
     @Transactional
     public void fetchDate(){
         String sdate = DateUtils.dateToStr(new Date());
-
+        //String sdate = "2020-05-14";
         afr.deleteBySdate(sdate);
 
         AccmalfunctionBean afb = this.get(sdate);

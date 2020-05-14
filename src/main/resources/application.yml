@@ -1,0 +1,14 @@
+server:
+  port: 8092
+logging:
+   level:
+    org.jeff.accquire: debug
+   file: "log/acquire.log"
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST = 172.16.20.6)(PORT = 1521))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = AFCCTEST)))
+    username: proc
+    password: abc
+  jpa:
+    show-sql: true
